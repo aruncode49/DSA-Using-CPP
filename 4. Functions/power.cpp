@@ -18,6 +18,7 @@ int main()
 {
 
     int a, b;
+    cout << "Enter your numbers : ";
     cin >> a >> b;
 
     int ans = power(a, b);
