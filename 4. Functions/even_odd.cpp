@@ -11,6 +11,14 @@ bool checkEvenOdd(int num)
     return false; // odd
 }
 
+// function using bitwise operators
+bool checkEvenOddUsingBitwise(int num)
+{
+    if (num & 1)
+        return false;
+    return true;
+}
+
 int main()
 {
     int num;
@@ -24,7 +32,7 @@ int main()
         return 0;
     }
 
-    bool ans = checkEvenOdd(num);
+    bool ans = checkEvenOddUsingBitwise(num);
 
     if (ans)
         cout << ">> Even number";
